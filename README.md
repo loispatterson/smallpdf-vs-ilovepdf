@@ -4,9 +4,9 @@ An outside-in look at where Smallpdf sits against iLovePDF and Adobe Acrobat,
 built entirely from data anyone can pull: Apple's public lookup API and the
 Google Play store pages.
 
-**[Read the report](https://loispatterson.github.io/pdf-app-store-analysis/)**
+**[Read the report](https://loispatterson.github.io/smallpdf-vs-ilovepdf/)**
 &nbsp;·&nbsp;
-[PDF version](smallpdf-store-analysis.pdf)
+[PDF version](smallpdf-vs-ilovepdf.pdf)
 
 ## The two findings
 
