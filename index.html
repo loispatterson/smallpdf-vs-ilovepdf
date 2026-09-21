@@ -1,0 +1,167 @@
+<title>Smallpdf Store Data</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{--ink:#1b1d21;--soft:#4b5158;--muted:#7a746c;--paper:#fff;--ground:#e9e5de;
+--rule:#d9d3c9;--grid:#ece7de;--blue:#3f6685;--red:#9d3a30;--ochre:#8a6a1c;
+--disp:"Fraunces",Georgia,serif;--sans:"Public Sans",Helvetica,Arial,sans-serif;--mono:"IBM Plex Mono",monospace;}
+body{background:var(--ground);color:var(--ink);font-family:var(--sans);font-size:14px;line-height:1.5;}
+.sheet{max-width:60rem;margin:20px auto 60px;background:var(--paper);padding:44px 52px 50px;box-shadow:0 1px 3px rgba(0,0,0,.13),0 12px 32px rgba(0,0,0,.08);}
+h1{font-family:var(--disp);font-weight:600;font-size:30px;line-height:1.12;margin:0;letter-spacing:-.01em;}
+.sub{font-family:var(--disp);font-style:italic;font-size:17px;color:var(--soft);margin:7px 0 0;}
+.by{font-family:var(--mono);font-size:11px;color:var(--muted);margin:14px 0 0;}
+h2{font-family:var(--mono);font-size:10.5px;font-weight:500;letter-spacing:.15em;text-transform:uppercase;color:var(--soft);
+ margin:30px 0 4px;padding-bottom:5px;border-bottom:1px solid var(--rule);break-after:avoid;}
+p{max-width:70ch;} .lede{font-size:15.5px;margin-top:12px;}
+.open{font-family:var(--disp);font-size:19px;color:var(--ink);margin:22px 0 0;max-width:62ch;}
+.head{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:20px;}
+.hc{background:var(--paper);padding:16px 18px;}
+.hc .v{font-family:var(--disp);font-size:38px;font-weight:600;line-height:1;font-variant-numeric:tabular-nums;}
+.hc .l{font-family:var(--mono);font-size:10px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin-top:8px;}
+.hc .d{font-size:13px;color:var(--soft);margin-top:8px;}
+.ios .v{color:var(--red);} .play .v{color:var(--blue);}
+table{border-collapse:collapse;width:100%;margin-top:12px;font-size:12.5px;}
+th,td{text-align:left;padding:4px 8px 4px 0;border-bottom:1px solid var(--grid);}
+th{font-family:var(--mono);font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:500;}
+td.n,th.n{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums;}
+td.b{font-weight:600;} td.s{color:var(--muted);font-size:11.5px;}
+tr.rom td:first-child{font-weight:600;}
+.barcell{width:140px;padding-right:0;}
+.bar{display:block;width:130px;height:7px;background:var(--grid);border-radius:2px;overflow:hidden;}
+.bar i{display:block;height:100%;border-radius:2px;}
+.note{background:#f4f1ea;border-left:3px solid var(--rule);padding:12px 16px;margin-top:14px;font-size:13px;}
+.note b{font-weight:600;}
+ul{max-width:70ch;padding-left:18px;} li{margin-bottom:5px;}
+.key{font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:10px;max-width:74ch;line-height:1.5;}
+.pies{margin-top:14px;} .pies svg{display:block;width:100%;height:auto;max-width:700px;}
+@media print{@page{size:A4;margin:11mm 13mm;}
+ body{background:#fff;font-size:8.9pt;line-height:1.38;}
+ .sheet{box-shadow:none;margin:0;padding:0;max-width:none;}
+ h1{font-size:19.5pt;} .sub{font-size:11pt;margin-top:4px;} .by{font-size:7.6pt;margin-top:8px;}
+ .lede{font-size:9.6pt;margin-top:7px;} .open{font-size:12pt;margin-top:13px;}
+ .head{margin-top:12px;} .hc{padding:11px 13px;} .hc .v{font-size:24pt;}
+ .hc .l{font-size:7.4pt;margin-top:5px;} .hc .d{font-size:8.4pt;margin-top:5px;}
+ h2{margin-top:12pt;font-size:8pt;padding-bottom:3px;}
+ p,li{max-width:none;} p{margin:5px 0;}
+ table{font-size:7.8pt;margin-top:7px;} th,td{padding:2.4px 7px 2.4px 0;}
+ th{font-size:7pt;} td.s{font-size:7.2pt;}
+ .note{padding:8px 12px;margin-top:9px;font-size:8.4pt;}
+ .pies svg{max-width:440px;margin:0 auto;} .key{font-size:7.4pt;margin-top:6px;}
+ ul{margin:6px 0;padding-left:15px;} li{margin-bottom:3px;}
+ .bar{width:88px;height:6px;} .barcell{width:96px;}
+ tr,.note,.head{break-inside:avoid;}}
+</style>
+<div class="sheet">
+<h1>iLovePDF&rsquo;s iOS advantage, and where Smallpdf is weakest</h1>
+<p class="sub">Two things the public App Store and Google Play data show, September 2026.</p>
+<p class="by">Loïs Patterson &middot; loispatterson76@gmail.com &middot; prepared for the Growth &amp; Product Analyst application</p>
+
+<p class="open">I thought I would show you some insights I found about your company. Nothing here is
+inside information. It is all public store data, pulled in an afternoon, but a few things in it
+surprised me and I thought they were worth passing on.</p>
+
+<p class="lede">Smallpdf, iLovePDF and Adobe Acrobat are the three largest PDF tools on both mobile
+stores. Ratings and reviews are a rough proxy for reach, and splitting them three ways gives a like-for-like
+picture within each store.</p>
+
+<h2>Share of ratings among the three largest PDF apps</h2>
+<div class="pies"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 300" class="pies">
+<style>.big{font-family:var(--disp);font-size:26px;font-weight:600;fill:#9d3a30}
+.tiny{font-family:var(--mono);font-size:9.5px;fill:#7a746c;letter-spacing:.06em;text-transform:uppercase}
+.ct{font-family:var(--mono);font-size:10.5px;fill:#4b5158;letter-spacing:.12em;text-transform:uppercase}
+.cap{font-family:var(--mono);font-size:11px;fill:#7a746c}
+.lg{font-family:var(--sans);font-size:12.5px;fill:#1b1d21}</style>
+<path d="M175.0,72.0 A78,78 0 0 1 182.3,72.3 L179.3,104.2 A46,46 0 0 0 175.0,104.0 Z" fill="#9d3a30"/><path d="M182.3,72.3 A78,78 0 0 1 248.7,124.4 L218.4,134.9 A46,46 0 0 0 179.3,104.2 Z" fill="#3f6685"/><path d="M248.7,124.4 A78,78 0 1 1 175.0,72.0 L175.0,104.0 A46,46 0 1 0 218.4,134.9 Z" fill="#bdb5a7"/><text x="175" y="146" text-anchor="middle" class="big">1.5%</text><text x="175" y="166" text-anchor="middle" class="tiny">Smallpdf</text><text x="175" y="46" text-anchor="middle" class="ct">Apple App Store</text><text x="175" y="262" text-anchor="middle" class="cap">iLovePDF 18.2%</text>
+<path d="M525.0,72.0 A78,78 0 0 1 532.2,72.3 L529.2,104.2 A46,46 0 0 0 525.0,104.0 Z" fill="#9d3a30"/><path d="M532.2,72.3 A78,78 0 0 1 551.5,76.6 L540.6,106.7 A46,46 0 0 0 529.2,104.2 Z" fill="#3f6685"/><path d="M551.5,76.6 A78,78 0 1 1 525.0,72.0 L525.0,104.0 A46,46 0 1 0 540.6,106.7 Z" fill="#bdb5a7"/><text x="525" y="146" text-anchor="middle" class="big">1.5%</text><text x="525" y="166" text-anchor="middle" class="tiny">Smallpdf</text><text x="525" y="46" text-anchor="middle" class="ct">Google Play</text><text x="525" y="262" text-anchor="middle" class="cap">iLovePDF 4.0%</text>
+<rect x="196" y="285" width="11" height="11" fill="#9d3a30"/><text x="212" y="294" class="lg">Smallpdf</text>
+<rect x="290" y="285" width="11" height="11" fill="#3f6685"/><text x="306" y="294" class="lg">iLovePDF</text>
+<rect x="384" y="285" width="11" height="11" fill="#bdb5a7"/><text x="400" y="294" class="lg">Adobe Acrobat</text>
+</svg></div>
+<p class="key">App Store: ratings on file across 25 storefronts. Google Play: review counts, which Google
+publishes globally rather than by country. Downloads tell the same story more coarsely, in buckets:
+Smallpdf 5M+, iLovePDF 10M+, Adobe 500M+.</p>
+
+<div class="note"><b>Smallpdf&rsquo;s position is the same on both stores. iLovePDF&rsquo;s is not.</b>
+Smallpdf holds 1.5% of the three on the App Store and 1.5% on Google Play. iLovePDF holds 18.2% on the
+App Store and 4.0% on Google Play, so it is roughly four times stronger on iOS than on Android while
+Smallpdf and Adobe are not. Whatever iLovePDF is doing on iOS, it is specific to iOS, and it is worth
+knowing what it is.</div>
+
+<div class="note"><b>What these numbers are not.</b> Apple publishes ratings, Google publishes reviews, and
+the two are different acts. The shares are internally consistent within each store, which is what makes
+the comparison usable, but the absolute figures are not interchangeable across stores. Neither store
+publishes usage, and Smallpdf&rsquo;s own data puts 61% of its sessions on desktop, so all of this
+describes the mobile surface rather than the business.</div>
+
+<h2>Apple App Store, by market</h2>
+<p>Ratings on file per storefront, September 2026. Ordered by Smallpdf&rsquo;s share.
+Romance-language markets are shown in red and bold.</p>
+<table>
+<thead><tr><th>Market</th><th class="n">Smallpdf</th><th class="n">iLovePDF</th><th class="n">Share</th><th></th><th class="n">Smallpdf&nbsp;&#9733;</th><th class="n">iLovePDF&nbsp;&#9733;</th></tr></thead>
+<tbody><tr class=""><td>Türkiye</td><td class="n">1,827</td><td class="n">5,471</td><td class="n b">33.4%</td><td class="barcell"><span class="bar"><i style="width:98.2%;background:#3f6685"></i></span></td><td class="n s">4.88</td><td class="n s">4.79</td></tr><tr class=""><td>Germany</td><td class="n">2,179</td><td class="n">7,308</td><td class="n b">29.8%</td><td class="barcell"><span class="bar"><i style="width:87.7%;background:#3f6685"></i></span></td><td class="n s">4.83</td><td class="n s">4.76</td></tr><tr class=""><td>Netherlands</td><td class="n">300</td><td class="n">1,011</td><td class="n b">29.7%</td><td class="barcell"><span class="bar"><i style="width:87.3%;background:#3f6685"></i></span></td><td class="n s">4.87</td><td class="n s">4.69</td></tr><tr class=""><td>Austria</td><td class="n">159</td><td class="n">578</td><td class="n b">27.5%</td><td class="barcell"><span class="bar"><i style="width:80.9%;background:#3f6685"></i></span></td><td class="n s">4.81</td><td class="n s">4.72</td></tr><tr class=""><td>Sweden</td><td class="n">126</td><td class="n">580</td><td class="n b">21.7%</td><td class="barcell"><span class="bar"><i style="width:63.9%;background:#3f6685"></i></span></td><td class="n s">4.81</td><td class="n s">4.74</td></tr><tr class=""><td>Switzerland</td><td class="n">337</td><td class="n">1,839</td><td class="n b">18.3%</td><td class="barcell"><span class="bar"><i style="width:53.9%;background:#3f6685"></i></span></td><td class="n s">4.86</td><td class="n s">4.81</td></tr><tr class=""><td>Indonesia</td><td class="n">3,231</td><td class="n">20,529</td><td class="n b">15.7%</td><td class="barcell"><span class="bar"><i style="width:46.3%;background:#3f6685"></i></span></td><td class="n s">4.90</td><td class="n s">4.89</td></tr><tr class=""><td>Philippines</td><td class="n">653</td><td class="n">4,239</td><td class="n b">15.4%</td><td class="barcell"><span class="bar"><i style="width:45.3%;background:#3f6685"></i></span></td><td class="n s">4.84</td><td class="n s">4.84</td></tr><tr class=""><td>United States</td><td class="n">6,878</td><td class="n">51,494</td><td class="n b">13.4%</td><td class="barcell"><span class="bar"><i style="width:39.3%;background:#3f6685"></i></span></td><td class="n s">4.84</td><td class="n s">4.76</td></tr><tr class=""><td>United Kingdom</td><td class="n">873</td><td class="n">6,934</td><td class="n b">12.6%</td><td class="barcell"><span class="bar"><i style="width:37.0%;background:#3f6685"></i></span></td><td class="n s">4.82</td><td class="n s">4.83</td></tr><tr class=""><td>India</td><td class="n">4,068</td><td class="n">33,123</td><td class="n b">12.3%</td><td class="barcell"><span class="bar"><i style="width:36.1%;background:#3f6685"></i></span></td><td class="n s">4.85</td><td class="n s">4.72</td></tr><tr class=""><td>Australia</td><td class="n">524</td><td class="n">4,934</td><td class="n b">10.6%</td><td class="barcell"><span class="bar"><i style="width:31.2%;background:#3f6685"></i></span></td><td class="n s">4.79</td><td class="n s">4.84</td></tr><tr class=""><td>Poland</td><td class="n">205</td><td class="n">1,939</td><td class="n b">10.6%</td><td class="barcell"><span class="bar"><i style="width:31.1%;background:#3f6685"></i></span></td><td class="n s">4.81</td><td class="n s">4.84</td></tr><tr class=""><td>Belgium</td><td class="n">177</td><td class="n">1,791</td><td class="n b">9.9%</td><td class="barcell"><span class="bar"><i style="width:29.1%;background:#3f6685"></i></span></td><td class="n s">4.88</td><td class="n s">4.75</td></tr><tr class=""><td>Canada</td><td class="n">804</td><td class="n">9,423</td><td class="n b">8.5%</td><td class="barcell"><span class="bar"><i style="width:25.1%;background:#3f6685"></i></span></td><td class="n s">4.82</td><td class="n s">4.85</td></tr><tr class="rom"><td>Italy</td><td class="n">1,572</td><td class="n">22,470</td><td class="n b">7.0%</td><td class="barcell"><span class="bar"><i style="width:20.6%;background:#9d3a30"></i></span></td><td class="n s">4.86</td><td class="n s">4.81</td></tr><tr class="rom"><td>France</td><td class="n">1,696</td><td class="n">28,922</td><td class="n b">5.9%</td><td class="barcell"><span class="bar"><i style="width:17.2%;background:#9d3a30"></i></span></td><td class="n s">4.85</td><td class="n s">4.79</td></tr><tr class="rom"><td>Portugal</td><td class="n">225</td><td class="n">3,946</td><td class="n b">5.7%</td><td class="barcell"><span class="bar"><i style="width:16.8%;background:#9d3a30"></i></span></td><td class="n s">4.83</td><td class="n s">4.83</td></tr><tr class="rom"><td>Brazil</td><td class="n">4,811</td><td class="n">90,304</td><td class="n b">5.3%</td><td class="barcell"><span class="bar"><i style="width:15.7%;background:#9d3a30"></i></span></td><td class="n s">4.92</td><td class="n s">4.93</td></tr><tr class=""><td>UAE</td><td class="n">591</td><td class="n">11,502</td><td class="n b">5.1%</td><td class="barcell"><span class="bar"><i style="width:15.1%;background:#3f6685"></i></span></td><td class="n s">4.84</td><td class="n s">4.76</td></tr><tr class=""><td>Japan</td><td class="n">908</td><td class="n">18,036</td><td class="n b">5.0%</td><td class="barcell"><span class="bar"><i style="width:14.8%;background:#3f6685"></i></span></td><td class="n s">4.79</td><td class="n s">4.71</td></tr><tr class=""><td>South Africa</td><td class="n">439</td><td class="n">10,527</td><td class="n b">4.2%</td><td class="barcell"><span class="bar"><i style="width:12.3%;background:#3f6685"></i></span></td><td class="n s">4.87</td><td class="n s">4.81</td></tr><tr class="rom"><td>Mexico</td><td class="n">2,282</td><td class="n">62,218</td><td class="n b">3.7%</td><td class="barcell"><span class="bar"><i style="width:10.8%;background:#9d3a30"></i></span></td><td class="n s">4.87</td><td class="n s">4.90</td></tr><tr class="rom"><td>Spain</td><td class="n">760</td><td class="n">25,136</td><td class="n b">3.0%</td><td class="barcell"><span class="bar"><i style="width:8.9%;background:#9d3a30"></i></span></td><td class="n s">4.84</td><td class="n s">4.82</td></tr><tr class="rom"><td>Argentina</td><td class="n">361</td><td class="n">12,236</td><td class="n b">3.0%</td><td class="barcell"><span class="bar"><i style="width:8.7%;background:#9d3a30"></i></span></td><td class="n s">4.89</td><td class="n s">4.90</td></tr>
+<tr><td><b>All 25</b></td><td class="n"><b>35,986</b></td><td class="n"><b>436,490</b></td><td class="n b">8.2%</td><td></td><td></td><td></td></tr>
+</tbody></table>
+
+<h2>What the spread shows, and what it does not</h2>
+<ul>
+<li><b>The range is nearly elevenfold</b>, from 33.4% in T&uuml;rkiye and 29.8% in Germany down to 3.0% in
+Spain and Argentina. An 8.2% average describes none of these markets.</li>
+<li><b>It is not a quality gap.</b> Both apps score between 4.7 and 4.9 in every market, usually within a
+few hundredths of each other. Users who install Smallpdf rate it as highly as users who install
+iLovePDF, wherever they are.</li>
+<li><b>It is not a localisation gap.</b> Smallpdf ships 23 languages and iLovePDF 24, and both include
+Spanish, French, Italian and Portuguese. The only differences are Bulgarian, Catalan and Greek on one
+side and Danish and Norwegian on the other.</li>
+<li><b>All seven Romance-language markets fall in the bottom ten.</b> Argentina and Spain are the lowest
+two. iLovePDF was founded in Barcelona in 2010, Smallpdf in Zurich in 2013, and if roughly two thirds of
+growth comes from organic search then position is won separately in each language, where a three-year
+head start compounds. Translation puts the product in a language; it does not transfer search authority.</li>
+</ul>
+
+<div class="note"><b>Stated as a hypothesis, because that is what it is.</b> I sorted the markets, saw the
+cluster, and drew the grouping around it afterwards. A permutation test says a clustering this low would
+arise by chance in about 4 of 10,000 random picks of seven countries, but a test chosen after seeing the
+data is not independent evidence. The converse does not hold either: T&uuml;rkiye is the strongest market
+of all and has nothing to do with the pattern, and Japan, South Africa and the UAE are weak without being
+Romance-language. Confirming or discarding this needs data I cannot see.</div>
+
+<h2>Google Play, by market</h2>
+<p>Google publishes review counts and downloads globally but localises the star rating, so Play can test
+satisfaction by market though not reach. Ordered by Smallpdf&rsquo;s deficit.</p>
+<table>
+<thead><tr><th>Market</th><th class="n">Smallpdf</th><th class="n">iLovePDF</th><th class="n">Difference</th></tr></thead>
+<tbody><tr class=""><td>Germany</td><td class="n">4.2</td><td class="n">4.5</td><td class="n b">-0.3</td></tr><tr class=""><td>Canada</td><td class="n">4.3</td><td class="n">4.6</td><td class="n b">-0.3</td></tr><tr class="rom"><td>Spain</td><td class="n">4.5</td><td class="n">4.7</td><td class="n b">-0.2</td></tr><tr class="rom"><td>Argentina</td><td class="n">4.6</td><td class="n">4.8</td><td class="n b">-0.2</td></tr><tr class=""><td>Australia</td><td class="n">4.4</td><td class="n">4.6</td><td class="n b">-0.2</td></tr><tr class=""><td>Poland</td><td class="n">4.4</td><td class="n">4.6</td><td class="n b">-0.2</td></tr><tr class="rom"><td>Italy</td><td class="n">4.6</td><td class="n">4.7</td><td class="n b">-0.1</td></tr><tr class=""><td>Austria</td><td class="n">4.5</td><td class="n">4.6</td><td class="n b">-0.1</td></tr><tr class=""><td>Philippines</td><td class="n">4.7</td><td class="n">4.8</td><td class="n b">-0.1</td></tr><tr class=""><td>United States</td><td class="n">4.5</td><td class="n">4.6</td><td class="n b">-0.1</td></tr><tr class=""><td>UAE</td><td class="n">4.7</td><td class="n">4.8</td><td class="n b">-0.1</td></tr><tr class="rom"><td>Mexico</td><td class="n">4.7</td><td class="n">4.8</td><td class="n b">-0.1</td></tr><tr class=""><td>Türkiye</td><td class="n">4.5</td><td class="n">4.5</td><td class="n b">+0.0</td></tr><tr class=""><td>Netherlands</td><td class="n">4.4</td><td class="n">4.4</td><td class="n b">+0.0</td></tr><tr class=""><td>Switzerland</td><td class="n">4.6</td><td class="n">4.6</td><td class="n b">+0.0</td></tr><tr class=""><td>United Kingdom</td><td class="n">4.6</td><td class="n">4.6</td><td class="n b">+0.0</td></tr><tr class=""><td>India</td><td class="n">4.6</td><td class="n">4.6</td><td class="n b">+0.0</td></tr><tr class="rom"><td>Brazil</td><td class="n">4.8</td><td class="n">4.8</td><td class="n b">+0.0</td></tr><tr class=""><td>South Africa</td><td class="n">4.8</td><td class="n">4.8</td><td class="n b">+0.0</td></tr><tr class="rom"><td>Portugal</td><td class="n">4.8</td><td class="n">4.7</td><td class="n b">+0.1</td></tr><tr class=""><td>Japan</td><td class="n">4.6</td><td class="n">4.5</td><td class="n b">+0.1</td></tr><tr class=""><td>Indonesia</td><td class="n">4.9</td><td class="n">4.8</td><td class="n b">+0.1</td></tr><tr class="rom"><td>France</td><td class="n">4.7</td><td class="n">4.6</td><td class="n b">+0.1</td></tr><tr class=""><td>Sweden</td><td class="n">4.7</td><td class="n">4.5</td><td class="n b">+0.2</td></tr><tr class=""><td>Belgium</td><td class="n">4.7</td><td class="n">4.5</td><td class="n b">+0.2</td></tr></tbody></table>
+
+<div class="note"><b>This is the out-of-sample test, and it half worked.</b> Play cannot test the reach
+pattern, because the counts are global. It can test satisfaction, and there the finding holds in a second
+independent dataset: Smallpdf averages 0.048 below iLovePDF across 25 markets, and in Romance-language
+markets specifically 0.057, which is the same number. Satisfaction is flat everywhere on both platforms.
+So the language pattern on iOS remains untested, and the claim that the gap is about distribution rather
+than product is now supported twice.</div>
+
+<h2>One oddity worth a question</h2>
+<p><b>Germany is Smallpdf&rsquo;s weakest rating on Play, 4.2 against 4.5</b>, while being its second
+strongest market on iOS and one of the four markets its own published statistics name as strongest. Large
+presence and lower satisfaction in the same market is the kind of tension that usually has a specific
+cause behind it.</p>
+
+<h2>Method, and what would undermine this</h2>
+<ul>
+<li>App Store figures come from Apple&rsquo;s public lookup API, one call per storefront, 25 storefronts,
+September 2026. Play figures come from the public store pages with the country parameter set.</li>
+<li><b>Ratings counts are a cumulative stock</b>, not current users and not momentum. An app that was
+strong three years ago and is fading now still looks strong here.</li>
+<li><b>Ratings counts depend on how hard an app prompts for them.</b> If iLovePDF prompts more often, its
+counts inflate independently of install base. That would apply uniformly across countries, so it cannot
+explain the spread, but it can inflate the level.</li>
+<li><b>Smallpdf is web-first.</b> Its own published data puts 61% of sessions on desktop. Everything here
+measures the mobile surface, which is 39% and growing fastest, not the business.</li>
+<li>Comparable public data on web share is paywalled. Where Similarweb does show a head-to-head figure,
+for India, it puts Smallpdf at 13.27% of the two sites&rsquo; combined traffic; the App Store ratio for
+India is about 11%. Two unrelated datasets, two points apart.</li>
+</ul>
+
+<p style="margin-top:20px;font-size:13px;color:var(--soft)">All of this is assembled from outside, from
+data anyone can pull. The value of it is the questions it raises, not the answers, and every one of them
+could be settled in a single query by someone with access to the real numbers.</p>
+</div>
