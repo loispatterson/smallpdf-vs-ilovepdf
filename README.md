@@ -1,4 +1,4 @@
-# What public app store data says about Smallpdf
+# Smallpdf vs iLovePDF: what the public store data shows
 
 An outside-in look at where Smallpdf sits against iLovePDF and Adobe Acrobat,
 built entirely from data anyone can pull: Apple's public lookup API and the
